@@ -29,7 +29,7 @@ function getCoordinates(cityName) {
 }
 
 function getTimeZoneInfo({ lat, lng }) {
-    const url = `http://api.timezonedb.com/v2.1/get-time-zone?key=${timeZoneDbApiKey}&format=json&by=position&lat=${lat}&lng=${lng}`;
+    const url = `https://api.timezonedb.com/v2.1/get-time-zone?key=${timeZoneDbApiKey}&format=json&by=position&lat=${lat}&lng=${lng}`;
 
     return fetch(url)
         .then(response => response.json())
